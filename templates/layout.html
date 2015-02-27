@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Scott Hill">
+
+    {% block extra_css %}{% endblock extra_css %}
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+
+<body role="document">
+
+    <div id="content" class="container theme-showcase" role="main">
+        {% block messages %}{% endblock messages %}
+        {% block content %}{% endblock %}
+    </div>
+
+    <div id="footer" style="font-size:x-small;margin:20px">
+        Copyright (C) 2015
+    </div>
+
+    {% block extra_js %}{% endblock extra_js %}
+</body>
+</html>
