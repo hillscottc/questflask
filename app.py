@@ -36,6 +36,8 @@ def show_entries():
     clues = [dict(category=row[0], question=row[1], answer=row[2]) for row in cur.fetchall()]
     return render_template('clues.html', clues=clues)
 
+    
+
 # @app.route("/")
 # def show(id):
 #     pastes = models.Paste.query.filter_by(id=id)
@@ -48,7 +50,7 @@ def show_entries():
 
 
 
-    
+
 
 
 if __name__ == '__main__':
